@@ -7,7 +7,7 @@
 
 ## :scroll: Description
 <!--- Describe your app in one or two sentences -->
-Images taken from the [Stanford Dogs Dataset](http://vision.stanford.edu/aditya86/ImageNetDogs/)
+
 
 ## :bulb: Motivation and Context
 <!--- Optionally point readers to interesting parts of your submission. -->
