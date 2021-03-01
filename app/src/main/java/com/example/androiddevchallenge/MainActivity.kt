@@ -18,7 +18,11 @@ package com.example.androiddevchallenge
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.*
+import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
+import androidx.compose.material.Surface
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.androiddevchallenge.data.puppies.impl.PuppiesRepositoryImpl
@@ -73,5 +77,3 @@ fun DarkPreview() {
         MyApp()
     }
 }
-
-
