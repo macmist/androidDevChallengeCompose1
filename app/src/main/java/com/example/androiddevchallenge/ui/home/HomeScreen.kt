@@ -20,6 +20,7 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.heightIn
@@ -44,7 +45,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.androiddevchallenge.PUPPY_SCREEN
 import com.example.androiddevchallenge.data.puppies.PuppiesRepository
 import com.example.androiddevchallenge.data.puppies.impl.puppies
-import com.example.androiddevchallenge.data.puppies.impl.randomChihuahua
+import com.example.androiddevchallenge.data.puppies.impl.randomPuppy
 import com.example.androiddevchallenge.model.Puppy
 
 @Composable
@@ -80,9 +81,10 @@ fun PuppyItem(puppy: Puppy, onClick: () -> Unit) {
             .clickable(onClick = onClick)
             .padding(16.dp)
             .fillMaxWidth()
+            .fillMaxHeight()
     ) {
         val imageModifier = Modifier
-            .heightIn(min = 100.dp)
+            .heightIn(min = 150.dp, max = 150.dp)
             .fillMaxWidth()
             .clip(MaterialTheme.shapes.medium)
         Image(
@@ -104,5 +106,5 @@ fun PuppyItem(puppy: Puppy, onClick: () -> Unit) {
 @Preview
 @Composable
 fun PuppyPreview() {
-    PuppyItem(puppy = randomChihuahua(), onClick = { })
+    PuppyItem(puppy = randomPuppy(), onClick = { })
 }

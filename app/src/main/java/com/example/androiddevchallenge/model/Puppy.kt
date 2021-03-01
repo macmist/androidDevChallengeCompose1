@@ -25,9 +25,10 @@ data class Puppy(
     @DrawableRes val imageId: Int
 )
 
-enum class Breed {
-    Chihuahua,
-    Dachshund,
-    Dalmatian,
-    Poodle
+enum class Breed(val str: String) {
+    Chihuahua("Chihuahua"),
+    Basset("Basset"),
+    Cairn("Cairn"),
+    Borzoi("Borzoi"),
+    Airedale("Airedale")
 }

@@ -36,7 +36,6 @@ fun Navigation(puppiesRepository: PuppiesRepository) {
         composable(HOME_SCREEN) { HomeScreen(navController = navController, puppiesRepository = puppiesRepository) }
         composable(PUPPY_SCREEN_ARG) { navBackStackEntry ->
             PuppyScreen(
-                navController = navController,
                 puppiesRepository = puppiesRepository,
                 puppyId = navBackStackEntry.arguments?.getString("puppyId")
             )
